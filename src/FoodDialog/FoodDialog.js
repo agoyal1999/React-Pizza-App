@@ -105,6 +105,7 @@ function FoodDialogContainer({ openFood, setOpenFood, setOrders, orders }) {
 				</DialogBanner>
 				<DialogContent>
 					<QuantityInput quantity={quantity} />
+					<p>Ingredients ({openFood.ingredients})</p>
 				</DialogContent>
 				<DialogFooter>
 					<ConfirmButton onClick={addToOrder}>Add to order: {formatPrice(openFood.price)}</ConfirmButton>
